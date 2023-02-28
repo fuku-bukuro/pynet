@@ -1,0 +1,6 @@
+{%- for int in intf_list %}
+interface {{ int }}
+ switchport mode access
+ switchport access vlan 30
+ negotiation auto
+{%- endfor %}

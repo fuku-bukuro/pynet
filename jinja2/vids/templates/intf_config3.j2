@@ -1,0 +1,6 @@
+{%- for i in range(25) %}
+interface GigabitEthernet0/0/{{ i }}
+ switchport mode access
+ switchport access vlan 30
+ negotiation auto
+{%- endfor %}
